@@ -12,19 +12,36 @@ header {
     bottom: no-repeat;
     background-size: cover;
 }
+
 h1 {
     color: rgb(7, 3, 3);
     font-size: 4rem;
     font-family: 'Times New Roman', Times, serif;
 }
+.news {
+background-color: #fff;    
+padding: 50px 0 32px;
+}
+
+article a {
+color: rgb(33, 37, 41);
+text-decoration: none;
+}
+
+article a:hover {
+    color: #0085a1;
+}
+
 footer {
     padding-top: 20px;
     padding-bottom: 60px;
     text-align: center;
 }
+
 footer .links {
     margin-bottom: 50px;
 }
+
 footer .links > a  {
     color: #636b6f;
     padding: 0 25px;
@@ -34,6 +51,7 @@ footer .links > a  {
     text-decoration: none;
     text-transform: uppercase;
 }
+
 .coppyright {
     color: rgb(108, 117, 125);
     font-family: 'Times New Roman', Times, serif;
