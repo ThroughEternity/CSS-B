@@ -18,9 +18,17 @@
     font-size: 4rem;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.centr {
+    text-align: center;
+}
 .news {
 background-color: #fff;    
 padding: 50px 0 32px;
+}
+
+.art {
+    padding: 10px;
 }
 
 .art a {
@@ -47,6 +55,8 @@ text-decoration: none;
 width: 600px;
 height: 300px;
 object-fit: cover;
+display: block;
+margin: 0 auto;
 }
 
 .art:nth-child(2n) {
