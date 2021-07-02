@@ -1,9 +1,9 @@
-body {
+.bod {
     margin: 0;
     padding: 0;
 }
 
-header {
+.cap {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,62 +13,72 @@ header {
     background-size: cover;
 }
 
-h1 {
-    color: rgb(7, 3, 3);
+.cap h1 {
+    color: rgb(7, 4, 4);
     font-size: 4rem;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.centr {
+    text-align: center;
 }
 .news {
 background-color: #fff;    
 padding: 50px 0 32px;
 }
 
-article a {
+.art {
+    padding: 10px;
+}
+
+.art a {
 color: rgb(33, 37, 41);
 text-decoration: none;
 }
 
-article a:hover {
+.art a:hover {
     color: #0085a1;
 }
 
-article h2 {
+.art h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 5px;
 }
 
-.article-meta {
+.art-meta {
     color: rgb(134, 142, 150);
     margin-bottom: 5px;
    
 }
 
-article img {
-width: 100%;
+.art img {
+width: 600px;
 height: 300px;
 object-fit: cover;
+display: block;
+margin: 0 auto;
 }
 
-article:nth-child(2n) {
+.art:nth-child(2n) {
     background-color: pink;   
 }
-article:nth-child(-n+2)::before {
+.art:nth-child(-n+2)::before {
     content:"NEW";
     color: red;
     
 }
 
-footer {
+.boot {
     padding-top: 20px;
     padding-bottom: 60px;
     text-align: center;
 }
 
-footer .links {
+.boot .links {
     margin-bottom: 50px;
 }
 
-footer .links > a  {
+.boot .links > a  {
     color: #636b6f;
     padding: 0 25px;
     font-size: 13px;
