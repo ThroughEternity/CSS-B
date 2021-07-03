@@ -8,7 +8,7 @@
 
 * HTML
 
-* CSS (Bootstrapp)
+* CSS (Bootstrap)
 
 ## Как открыть/запустить
 
