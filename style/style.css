@@ -13,6 +13,7 @@
     background-size: cover;
 }
 
+
 .heading {
     color: rgb(7, 4, 4);
     font-size: 4rem;
@@ -20,22 +21,19 @@
     
 }
 
-.news {
+ .jjjj{
     background-color: #fff;
     padding: 50px 0 32px;
 }
 
-.art {
-    padding: 10px;
-}
 
-.art a {
+.art  {
     color: rgb(33, 37, 41);
     text-decoration: none;
 }
 
-.art a:hover {
-    color: #0085a1;
+.art :hover {
+    color: #bd0000;
 }
 
 .art h2 {
@@ -127,11 +125,4 @@
 .coppyright {
     color: rgb(108, 117, 125);
     font-family: 'Times New Roman', Times, serif;
-}
-
-.mid {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    flex-wrap: wrap;
 }
