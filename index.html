@@ -3,117 +3,211 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" media="screen and (color)" href="example.css">
+    <link rel="stylesheet" media="screen and (color)" href="example.cs">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
     <title>News</title>
 </head>
 
 <body class="bod">
-    <section>
-        <div class="cap">
-            <h1>Новости</h1>
-        </div>
-    </section>
-
-    <section class="news">
-        <main class="flex-container">
-            <div class="flex-item">
-                <article class="art">
-                    <a href="#">
-                        <h2>Кто додумался это построить?</h2>
-                    </a>
-                    <div class="article-meta">
-                        Опублековал <a href="">Пётр Васильев</a> 1 Июля 2021
-                    </div>
-                    <img src="https://images.unsplash.com/photo-1543915931-5ed89892a2ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80" alt="новость">
-                    <p>Странной формы здание в прибрежном районе иркутска всбударажило общественность.</p>
-                </article>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Первый канал</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ссылка</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Войти
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Поиск</button>
+                </form>
             </div>
-            <div class="flex-item">
-                <article class="art">
-                    <a href="#">
+        </div>
+    </nav>
+
+    <div class="contаiner">
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1500674425229-f692875b0ab7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                            class="d-block w-100" alt="новость шапка">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="heading">Новости</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1625425294563-9087a4235f47?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                            class="d-block w-100 " alt="новость шапка">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="heading">Искусство</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="d-block w-100 "
+                            alt="новость шапка">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="heading">Кулинария</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </section>
+        <main>
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="">
+                        <a class="art" href="# ">
+                            <h2>Кто додумался это построить?</h2>
+                        </a>
+                        <div class="article-meta">
+                            Опублековал <a href=" ">Пётр Васильев</a> 1 Июля 2021
+                        </div>
+                        <img class="img-fluid"
+                            src="https://images.unsplash.com/photo-1543915931-5ed89892a2ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80 "
+                            alt="новость ">
+                        <p>Странной формы здание в прибрежном районе иркутска всбударажило общественность.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+
+                    <a class="art" href="# ">
                         <h2>Похабщина или современное искувство?</h2>
                     </a>
                     <div class="article-meta">
-                        Опублековал <a href="">Пётр Васильев</a> 1 Июля 2021
+                        Опублековал <a href=" ">Пётр Васильев</a> 1 Июля 2021
                     </div>
-                    <img src="https://images.unsplash.com/photo-1561617398-f5b36165c26a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80" alt="новость">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1561617398-f5b36165c26a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80 "
+                        alt="новость ">
                     <p>Жителей посёлка Заднепристровье ненашутку взволновало графити на фосаде
                         <br> забора здания дома культуры репортаж с места событий.
                     </p>
-                </article>
-            </div>
-            <div class="flex-item">
-                <article class="art">
-                    <a href="#">
+
+
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+
+                    <a class="art" href="#">
                         <h2>Габен ты доволен?</h2>
                     </a>
                     <div class="article-meta">
-                        Опублековала <a href="">Анна Виноградова</a> 1 Июля 2021
+                        Опублековала <a href=" ">Анна Виноградова</a> 1 Июля 2021
                     </div>
-                    <img src="https://images.unsplash.com/photo-1516567832553-66232148f74c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="новость">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1516567832553-66232148f74c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80 "
+                        alt="новость ">
                     <p>Страшная трагедия произощла городе Уфа. Пикнутый в пятёрку тинкер
                         <br>вызвал пожар в доме юнного геймера на Арцебужевской. Прямое включение.
                     </p>
-                </article>
-            </div>
-            <div class="flex-item">
-                <article class="art">
-                    <a href="#">
+
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+
+                    <a class="art" href="#">
                         <h2>Играй гармонь</h2>
                     </a>
                     <div class="article-meta">
-                        Опублековал <a href="">Марк Твен</a> 1 Июля 2021
+                        Опублековал <a href=" ">Марк Твен</a> 1 Июля 2021
                     </div>
-                    <img src="https://images.unsplash.com/photo-1590992008760-0970cd971ce2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2125&q=80" alt="новость">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1590992008760-0970cd971ce2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2125&q=80 "
+                        alt="новость ">
                     <p>Продолжаются народные гуляния в округе Вашингтон. Народ ликует что
                         <br> благодаря усилиям конгресса Российская федерация разрешила им
                         <br> посещать курорты Краснодарского края.
                     </p>
-                </article>
-            </div>
-            <div class="flex-item">
-                <article class="art">
-                    <a href="#">
+
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+
+                    <a class="art" href="# ">
                         <h2>Даколе</h2>
                     </a>
-                    <div class="article-meta">
-                        Опублековал <a href="">Юрий Хованский</a> 30 Июня 2021
+                    <div class="article-meta ">
+                        Опублековал <a href=" ">Юрий Хованский</a> 30 Июня 2021
                     </div>
-                    <img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="новость">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1547683905-f686c993aae5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80 "
+                        alt="новость ">
                     <p>Ужасное наводнение постигло город Самара в связи с приездом
                         <br> популярной группы кий поп. Коментарии населения.
                     </p>
-                </article>
-            </div>
-            <div class="flex-item">
-                <article class="art">
-                    <a href="#">
-                        <h2>Безалкогольная водка </h2>
+
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 ">
+                    <a class="art" href="# ">
+                        <h2>Безалкогольный виски </h2>
                     </a>
-                    <div class="article-meta">
-                        Опублековал <a href="">Юрий Хованский</a> 30 Июня 2021
+                    <div class="article-meta ">
+                        Опублековал <a href=" ">Юрий Хованский</a> 30 Июня 2021
                     </div>
-                    <img src="https://images.unsplash.com/photo-1530034424313-9be028eeae5a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="новость">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1530034424313-9be028eeae5a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80 "
+                        alt="новость ">
                     <p>Ужас капитализма или новое веенье моды.
                         <br> Расскажем вам уже сегодня.
                     </p>
-                </article>
+                </div>
             </div>
         </main>
-    </section>
-    <footer class="bott">
-        <div class="links">
-            <a href="#">Вакансии</a>
-            <a href="#">Контакты</a>
-            <a href="#">О нас</a>
-            <a href="#">Рекламма</a>
+    </div>
+    <footer class="bott ">
+        <div class="links ">
+            <a href="# ">Вакансии</a>
+            <a href="# ">Контакты</a>
+            <a href="# ">О нас</a>
+            <a href="# ">Рекламма</a>
         </div>
 
         <div class="coppyright">
             coppyright © БыстроНовости
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
+
 
 </html>
